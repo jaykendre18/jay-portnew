@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jay Kendre | Engineering Student @ MIT AOE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: #0a192f;
+      color: white;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #64ffda;
+    }
+
+    /* Hero */
+    #hero {
+      height: 100vh;
+      background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(38, 32, 82, 0.85)), 
+                  url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 5%;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content h2 {
+      font-size: 1.8rem;
+      color: #64ffda;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #64ffda;
+      color: #0a192f;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background: #5ce8c8;
+    }
+
+    /* Sections */
+    section {
+      padding: 6rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #0a192f;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .skill-tag {
+      background: #0a192f;
+      color: #64ffda;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 1.5rem;
+    }
+
+    .project-info h3 {
+      margin-bottom: 0.8rem;
+      color: #0a192f;
+    }
+
+    /* Contact */
+    #contact {
+      background: #29384e;
+      color: rgb(89, 222, 111);
+      text-align: center;
+    }
+
+    .social-links {
+      margin: 2rem 0;
+    }
+
+    .social-links a {
+      color: #64ffda;
+      font-size: 1.8rem;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #040c1c;
+      color: #8892b0;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 1rem;
+      }
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+      .hero-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Jay Kendre</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Jay Kendre</h1>
+      <h2>Engineering Student @ MIT Academy of Engineering</h2>
+      <p>Passionate about Systems Programming, Linux & Web Technologies</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        I am currently pursuing B.Tech in Computer Science software engineering at 
+        <strong>MIT Academy of Engineering (MIT AOE)</strong>, Pune, Maharashtra.
+      </p>
+      <p>
+        With strong fundamentals in programming and systems, I enjoy solving problems using C, working in Linux environments, 
+        and building clean & responsive web interfaces with HTML and CSS.
+      </p>
+
+      <div class="skills">
+        <span class="skill-tag">C Programming</span>
+        <span class="skill-tag">Linux</span>
+        
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+       
+        <span class="skill-tag">Problem Solving</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="C Project">
+        <div class="project-info">
+          <h3>BOOK SWAP</h3>
+          <p>web site where you can sell or buy a book.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Linux">
+        <div class="project-info">
+          <h3>Linux System skills management</h3>
+          <p>based on students CGPA which programing languge he/she get.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web">
+        <div class="project-info">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive single-page portfolio built from scratch using only HTML & CSS.</p>
+        </div>
+      </div>
+
+      <!-- Add 1–2 more of your actual projects here -->
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>I'm always open to interesting projects, internships, or just a tech chat!</p>
+    
+    <div class="social-links">
+      
+      <a href="mailto:jaybabankendre18@gmail.com">jaybabankendre18</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jay Kendre | MIT Academy of Engineering</p>
+  </footer>
+
+</body>
+</html>
